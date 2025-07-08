@@ -41,7 +41,6 @@ coverage/
 .nyc_output/
 
 # Misc
-*.mp4
 *.mov
 *.avi
 *.mkv
