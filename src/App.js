@@ -1,32 +1,31 @@
 import React from 'react';
-import Article from './components/article/Article';
-import Cta from './components/cta/Cta';
-import Brand from './components/brand/Brand';
-import Feature from './components/feature/Feature';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './containers/footer/Footer';
-import Blog from './containers/blogs/Blog';
-import Features from './containers/features/Features'
-import Header from './containers/header/Header'
-import Possibility from './containers/possibility/Possibility'
-import Vupx from './containers/vupx/Vupx'
-import './App.css'
+import Home from './pages/Home';
+import ProductDetail from './pages/Detail';
+
+import './App.css';
+
 const App = () => {
   return (
-    <div className='App'>
-      <div className='grandient__bg'>
-      <Navbar/>
-      <Header/>
-      </div>
-      <Brand/>
-      <Vupx/>
-      <Features/>
-      <Possibility/>
-      <Cta/>
-      <Blog/>
-      <Footer/>
-    </div>
-  )
-}
+    <Router>
+      <div className='App'>
+        <div className='grandient__bg'>
+          <Navbar />
+        </div>
 
-export default App
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/producto/:id" element={<ProductDetail />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;

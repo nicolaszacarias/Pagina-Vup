@@ -14,10 +14,10 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-links_container">
           <p><a href="#inicio">Inicio</a></p>
-          <p><a href="#QEV">Que es Vup?</a></p>
-          <p><a href="#possibility">Servicios</a></p>
-          <p><a href="#Novedades">Novedades</a></p>
-          <p><a href="#blog">Contactanos</a></p>
+          <p><a href="#Servicios">Servicios</a></p>
+          <p><a href="#Cursos">Cursos</a></p>
+          <p><a href="#contact-us">Contactanos</a></p>
+          <p><a href="#Instalaciones">Instalaciones</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
