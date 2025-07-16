@@ -1,3 +1,4 @@
+// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
@@ -6,21 +7,30 @@ import Home from './pages/Home';
 import ProductDetail from './pages/Detail';
 
 import './App.css';
+import fondo from './fondo.png'; // ✅ Ruta desde src
 
 const App = () => {
   return (
     <Router>
-      <div className='App'>
-        <div className='grandient__bg'>
+      <div
+        className="App"
+        style={{
+          backgroundImage: `url(${fondo})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          minHeight: '100vh',
+        }}
+      >
+        <div className="grandient__bg">
           <Navbar />
         </div>
 
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/producto/:id" element={<ProductDetail />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/producto/:id" element={<ProductDetail />} />
+        </Routes>
 
         <Footer />
       </div>
@@ -29,3 +39,4 @@ const App = () => {
 };
 
 export default App;
+
