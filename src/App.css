@@ -6,12 +6,33 @@
 }
 
 body {
-  background-image: url('./fondo.png'); /* ajustá la ruta si está en public o src */
-  background-size: cover;               /* cubre toda la pantalla */
+  background-image: url('./fondo.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;         /* para que no se mueva al hacer scroll */
-  color: white;                         /* opcional, para contraste */
+  background-attachment: scroll; /* evitar problemas en móviles */
+  background-color: #000; /* color de reserva */
+
+  color: white;
+
+  /* Optimización para evitar parpadeos en móviles */
+  will-change: background-position;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  /* Compatibilidad completa de transform */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+}
+
+/* Activa el fondo fijo solo en pantallas grandes */
+@media screen and (min-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
 }
 
 a {
@@ -72,6 +93,7 @@ html, body, #root {
   flex: 1;
 }
 
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -112,4 +134,5 @@ html, body, #root {
   .section__margin {
     margin: 4rem 2rem;
   }  
+  
 }
