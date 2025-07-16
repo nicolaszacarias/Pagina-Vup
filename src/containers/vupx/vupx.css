@@ -95,6 +95,24 @@
     .gpt3__whatgpt3-heading p {
         margin-top: 1rem;
     }
+
+}
+.link-feature {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.link-feature:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @media screen and (max-width: 650px) {
