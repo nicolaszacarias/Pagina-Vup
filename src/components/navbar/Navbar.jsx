@@ -31,11 +31,11 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="gpt3__navbar-menu_container scale-up-center">
           <div className="gpt3__navbar-menu_container-links">
-            <p><a href="#inicio">Inicio</a></p>
-            <p><a href="#QEV">Que es Vup?</a></p>
-            <p><a href="#Falta">Servicios</a></p>
-            <p><a href="#Novedades">Novedades</a></p>
-            <p><a href="#Falta">Contactanos</a></p>
+          <p><a href="/#inicio">Inicio</a></p>
+          <p><a href="/#Servicios">Servicios</a></p>
+          <p><a href="/#Cursos">Cursos</a></p>
+          <p><a href="/#contact-us">Contactanos</a></p>
+          <p><a href="/#Instalaciones">Instalaciones</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
             {/* <p>Sign in</p> */}
