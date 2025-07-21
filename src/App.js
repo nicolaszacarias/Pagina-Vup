@@ -5,7 +5,8 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './containers/footer/Footer';
 import Home from './pages/Home';
 import ProductDetail from './pages/Detail';
-
+import CheckoutForm from './pages/PasarelaPago'
+import Gracias from './pages/Gracias';
 import './App.css';
 import fondo from './fondo.png'; // ✅ Ruta desde src
 
@@ -30,6 +31,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/producto/:id" element={<ProductDetail />} />
+          <Route path="/Pasareladepago" element={<CheckoutForm />} />
+          <Route path="/Gracias" element={<Gracias />} />
         </Routes>
 
         <Footer />

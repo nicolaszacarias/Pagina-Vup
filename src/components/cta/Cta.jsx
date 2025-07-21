@@ -13,7 +13,7 @@ const Cta = () => {
         {/* Lado izquierdo - Contactos */}
         <div className="c-left">
           <div className="gradient__text">
-          <h2>Estamos para ayudarte</h2>
+          <h2>Estamos para ayudarte</h2> 
           </div>
           <p>Elegí tu canal de contacto favorito y hablá con nosotros.</p>
 

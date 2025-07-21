@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../services/data';
 import './ProductDetail.css';
-
+import { Link } from 'react-router-dom';
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
@@ -42,7 +42,9 @@ const ProductDetail = () => {
         <p className="price">${product.price}</p>
         <h3>Descripción</h3>
         <p className="description">{product.description}</p>
+        <Link to="/Pasareladepago" state={{ nombre: product.name, precio: product.price, link: product.link }}>
         <button className="btn-contact">Comprar</button>
+        </Link>
       </div>
     </main>
   );
