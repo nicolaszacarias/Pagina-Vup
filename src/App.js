@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import ProductDetail from './pages/Detail';
 import CheckoutForm from './pages/PasarelaPago'
 import Gracias from './pages/Gracias';
+import WhatsAppButton from './components/whbutton/Whbutton';
 import './App.css';
 import fondo from './fondo.png'; // ✅ Ruta desde src
 
@@ -34,7 +35,7 @@ const App = () => {
           <Route path="/Pasareladepago" element={<CheckoutForm />} />
           <Route path="/Gracias" element={<Gracias />} />
         </Routes>
-
+        <WhatsAppButton/>
         <Footer />
       </div>
     </Router>

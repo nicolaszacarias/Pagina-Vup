@@ -1,0 +1,40 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    background-color: #2D7BE5; /* Color de fondo del botón */
+    color: white; /* Color del icono */
+    border-radius: 50%; /* Forma circular del botón */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Quita la decoración de enlace */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el botón */
+    z-index: 999; /* Coloca el botón por encima de otros elementos */
+    transition: transform 0.3s ease; /* Efecto de transición al interactuar con el botón */
+  
+    /* Estilos responsivos */
+@media(max-width: 768px) {
+      bottom: 10px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+}
+}
+
+  .whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre el botón */
+  }
+  /* Buttonwh.css */
+
+/* Asegúrate de que el botón se vea en dispositivos móviles */
+@media (max-width: 768px) {
+  .whatsapp-button {
+      bottom: 15px;
+      right: 15px;
+      font-size: 1.5rem; /* Ajusta el tamaño del ícono si es necesario */
+  }
+}
