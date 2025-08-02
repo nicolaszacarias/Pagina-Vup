@@ -1,7 +1,7 @@
 import React from "react";
 import "./cta.css";
 import { MdCall, MdEmail } from "react-icons/md";
-import { BsWhatsapp, BsLinkedin } from "react-icons/bs";
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Cta = () => {
@@ -15,7 +15,7 @@ const Cta = () => {
           <div className="gradient__text">
           <h2>Estamos para ayudarte</h2> 
           </div>
-          <p>Elegí tu canal de contacto favorito y hablá con nosotros.</p>
+          <p>Si no te sirvieron nuestro packs armados te hacemos uno personalizado</p>
 
           <div className="contact-grid">
             <div className="contact-card">
@@ -38,10 +38,10 @@ const Cta = () => {
             </div>
 
             <div className="contact-card">
-              <div className="icon"><BsLinkedin /></div>
-              <h3>LinkedIn</h3>
-              <p>/asegurarnet</p>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">Ver perfil</a>
+              <div className="icon"><BsInstagram /></div>
+              <h3>Instagram</h3>
+              <p>@vupcontenidos</p>
+              <a href="https://www.instagram.com/vupcontenidos/" target="_blank" rel="noreferrer">Ver perfil</a>
             </div>
 
             <div className="contact-card">

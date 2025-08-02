@@ -13,8 +13,8 @@ const Home = () => {
       <Vupx />
       <Features />
       <Possibility />
-      <Cta />
       <Blog />
+      <Cta />
     </>
   );
 };

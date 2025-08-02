@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from './../../Vuplogo.png';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -16,13 +17,15 @@ const Navbar = () => {
           <p><a href="/#inicio">Inicio</a></p>
           <p><a href="/#Servicios">Servicios</a></p>
           <p><a href="/#Cursos">Cursos</a></p>
+          <p><a href="/#Instalaciones">Extras</a></p>
           <p><a href="/#contact-us">Contactanos</a></p>
-          <p><a href="/#Instalaciones">Instalaciones</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
         <p></p>
-        <button type="button">Comenzar</button>
+        <Link>
+        <button type="button">Login</button>
+        </Link>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu
@@ -34,12 +37,14 @@ const Navbar = () => {
           <p><a href="/#inicio">Inicio</a></p>
           <p><a href="/#Servicios">Servicios</a></p>
           <p><a href="/#Cursos">Cursos</a></p>
+          <p><a href="/#Instalaciones">Extras</a></p>
           <p><a href="/#contact-us">Contactanos</a></p>
-          <p><a href="/#Instalaciones">Instalaciones</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
             {/* <p>Sign in</p> */}
-            <button type="button">Comenzar</button>
+            <Link>
+            <button type="button">Login</button>
+            </Link>
           </div>
         </div>
         )}

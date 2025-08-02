@@ -41,3 +41,19 @@
 .checkout-form button:hover {
   background: #b3155a;
 }
+.back-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #2d7be5;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #1a57b4;
+}

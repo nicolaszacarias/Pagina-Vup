@@ -2,10 +2,14 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useLocation } from "react-router-dom";
 import "./pasarelapago.css";
+import { useNavigate } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi";
+
 
 const CheckoutForm = () => {
   const location = useLocation();
   const form = useRef();
+  const navigate = useNavigate();
 
   const { nombre, precio, link } = location.state || {};
 
@@ -37,6 +41,10 @@ const CheckoutForm = () => {
 
   return (
     <div className="checkout-container">
+      <button className="back-button" onClick={() => navigate("/")}>
+  <BiArrowBack size={20} style={{ marginRight: "0.5rem" }} />
+  Volver al inicio
+</button>
       <div className="checkout-summary">
         <h2>Resumen de tu compra</h2>
         <p><strong>Servicio:</strong> {nombre}</p>
